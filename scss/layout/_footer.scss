@@ -1,0 +1,79 @@
+@charset "UTF-8";
+@import "main/_main";
+
+.footer{
+	color:#fff;
+}
+
+/*Первый уровень*/
+.f-1{
+	background:$cLMain;
+	padding: 10px 200px;
+}
+
+.f-item{
+	display:inline-block;
+	margin-right: 150px;
+	li{list-style:none;margin-bottom:14px;}
+	a{color:#fff;text-decoration:underline;font-size:18px;
+		&:hover,&:focus{text-decoration:none;}
+	}
+}
+
+@media (min-width:1665px) and (max-width:1769px){
+	.f-item{margin-right: 120px;
+		a{font-size:16px;}
+	}
+}
+
+@media (min-width:1200px) and (max-width:1664px){
+	.f-item{margin-right: 0px;
+		a{font-size:16px;}
+	}
+}
+
+@media (min-width:768px) and (max-width:1199px){
+	.f-item{margin-right: 0px;
+		a{font-size:12px;}
+	}
+}
+
+@media (min-width:480px) and (max-width:767px){
+	.f-1{padding: 10px 100px;}
+	.f-item{margin-right: 0px;
+		a{font-size:12px;}
+	}
+}
+
+@media (max-width:480px){
+	.f-1{padding: 10px 20px;}
+	.f-item{margin-right: 0px;
+		a{font-size:12px;}
+	}
+}
+
+
+
+.f-item-last{margin-right: 0px;}
+/*Конец*/
+
+/*Второй уровень*/
+.f-2{
+	background:$cMain;
+	text-align: center;
+	padding:16px 0;
+	span{font-size:18px;}
+}
+
+@media (min-width:1200px) and (max-width:1769px){
+	.f-2{padding:10px 0;
+		span{font-size:16px;}
+	}
+}
+
+@media (max-width:1199px){
+	.f-2{ padding:6px 0;
+		span{font-size:12px;}
+	}
+}
+/*Конец*/

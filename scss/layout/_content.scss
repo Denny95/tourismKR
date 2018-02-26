@@ -1,0 +1,131 @@
+@charset "UTF-8";
+@import "main/_main";
+
+
+.content{
+	background: #eaeaea;
+}
+
+/*Блок экскурсии*/
+.service{
+	position: relative;
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 200px;
+	padding-bottom:43px;
+}
+
+.service-item{
+	position:relative;
+	background:#fff;
+	max-width:20%;
+	margin:0 10px 50px;
+	padding-bottom:25px;
+	
+	.title{margin-top:20px; margin-bottom: 0px;}
+	img{width:100%;}
+	span{display:block; text-align:left;margin-left:16.5px;margin-right:10px; margin-bottom:26px;font-size:18px;}
+
+	.service_type, .service_time{position:absolute; bottom:15px;
+		white-space: nowrap; font-weight: bold; font-size: 18px; overflow:hidden;margin-bottom:0;}
+	.service_type{left:0}
+	.service_time{text-align:right; right:10px;}
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+	.service-item{max-width:23%;}
+}
+
+@media (min-width:1401px){
+	.service-item{max-width:21%;}
+}
+
+@media(min-width:991){
+	.service-item{max-width:22%;}
+}
+
+@media (min-width: 768px) and (max-width: 1199px){
+	.service{margin: 0 100px; justify-content:space-between;}
+	.service-item{max-width:45%;min-width:45%;}
+}
+
+@media (max-width: 767px) {
+	.service{margin: 0 100px; justify-content:space-between;}
+	.service-item{max-width:100%;min-width:100%;}
+}
+
+@media (max-width: 480px) {
+	.service{margin: 0 20px; justify-content:space-between;}
+	.service-item{max-width:100%;min-width:100%;}
+}
+
+.service-item_first{margin-left:0;}
+.service-item_last{margin-right:0;}
+
+.service-btn{text-align:center; margin:0 auto; width:100%;
+	a{background:$cMain;padding:14px 27px;text-align:center;text-transform:uppercase;
+		font-size:18px;color:#fff;
+		&:hover,&:focus{background:$cLMain;text-decoration:none;}
+	}
+}
+/*Блок экскурсии Конец*/
+
+/*Карта*/
+.map{
+	width:100%; margin-bottom:50px;
+	iframe{width:100%;}
+}
+/*Карта Конец*/
+
+/*Блок экурсоводы*/
+.guide{
+	position: relative;
+	display:flex;
+	flex-wrap:wrap;
+	margin: 0 200px;
+	padding-bottom:83px;
+}
+
+.guide-item{
+	position:relative;
+	max-width:15%;
+	margin-right:35px;
+
+	img{width:100%;border-radius: 300px;}
+	span{display:block;text-align:center;font-style:italic;}
+}
+
+.guide-item-last{margin-right:0;}
+
+@media (min-width:1200px) and (max-width:1664px){
+	.guide-item{margin-right:8px;}
+}
+
+@media (min-width:1000px) and (max-width:1199px){
+	.guide-item{max-width:30%;margin-right:20px;margin-bottom:35px;}
+}
+
+@media (min-width:991px) and (max-width:1199px){
+	.guide-item{max-width:30%;margin-right:18px;margin-bottom:35px;}
+}
+
+@media (min-width:768px) and (max-width:991px){
+	.guide-item{max-width:30%;margin-right:110px;margin-bottom:35px;}
+}
+
+@media (min-width:750px) and (max-width:767px){
+	.guide{margin:0 100px;}
+	.guide-item{max-width:100%;margin-bottom:35px;text-align:center;}
+}
+
+@media (min-width:480px) and (max-width:749px){
+	.guide{margin:0 100px;}
+	.guide-item{max-width:100%;margin:0 auto;margin-bottom:35px;text-align:center;}
+}
+
+@media (max-width: 480px) {
+	.guide{margin:0 20px;}
+	.guide-item{max-width:100%;margin-right:0px;margin:0 auto;margin-bottom:35px;text-align:center;}
+}
+/*Блок экурсоводы Конец*/
+
